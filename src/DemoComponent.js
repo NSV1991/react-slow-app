@@ -1,6 +1,13 @@
 import React from "react";
 
-export const DemoComponent = ({ sleep, time, onChange }) => {
+const sleep = time => {
+  const done = Date.now() + time;
+  while (done > Date.now()) {
+    // sleep...
+  }
+};
+
+export const DemoComponent = ({ time, onChange }) => {
   sleep(time);
   return (
     <div>

@@ -1,7 +1,6 @@
 import React from "react";
 
 export const Example = ({ sleep, time, value, onChange }) => {
-  sleep(time);
   return (
     <div>
       <label htmlFor="example">Demo Data</label>
